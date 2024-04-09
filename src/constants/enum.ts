@@ -32,6 +32,7 @@ export enum NetworkName {
   MUMBAI = 'mumbai',
   OPTMISM = 'optimism',
   CELO = 'celo',
+  MantleSepolia = 'MantleSepolia',
 }
 
 export enum ChainId {
@@ -46,6 +47,7 @@ export enum ChainId {
   Optimism = 10,
   Arbitrum = 42161,
   CELO = 42220,
+  MantleSepolia = 5003,
 }
 
 export enum NFTType {
