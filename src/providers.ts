@@ -28,6 +28,9 @@ export const bscProvider = new ethers.providers.JsonRpcProvider(
   'https://bsc-dataseed.binance.org/'
 );
 
+export const mantlesepoliaProvider = new ethers.providers.JsonRpcProvider(
+  'https://rpc.sepolia.mantle.xyz/'
+);
 
 export const JSON_RPC_PROVIDERS: {
   [key: string]: ethers.providers.JsonRpcProvider;
@@ -38,4 +41,5 @@ export const JSON_RPC_PROVIDERS: {
   ethereum: mainnetProvider,
   polygon: polygonProvider,
   bsc: bscProvider,
+  mantlesepolia: mantlesepoliaProvider,
 };
