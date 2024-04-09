@@ -33,6 +33,14 @@ export const MATIC_COIN: Token = {
   chainId: ChainId.Polygon,
 };
 
+export const MNT: Token = {
+  name: 'MantleSepolia',
+  symbol: 'MNT',
+  decimals: 18,
+  address: ZEROEX_NATIVE_TOKEN_ADDRESS,
+  logoURI: '',
+  chainId: ChainId.MantleSepolia,
+};
 export const MIN_ORDER_DATE_TIME = moment.duration(1, 'hour');
 
 export const COINGECKO_ENDPOIT = 'https://api.coingecko.com/api/v3';
@@ -45,6 +53,7 @@ export const COINGECKO_PLATFORM_ID: { [key: number]: string } = {
   [ChainId.CELO]: 'celo',
   [ChainId.FANTOM]: 'fantom',
   [ChainId.Optimism]: 'optimistic-ethereum',
+  [ChainId.MantleSepolia]: 'optimistic-ethereum',
 };
 
 export const LANGUAGES: Language[] = [
