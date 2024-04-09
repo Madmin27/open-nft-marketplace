@@ -15,6 +15,12 @@ const MATIC: AddEthereumChainParameter['nativeCurrency'] = {
   decimals: 18,
 };
 
+const MNT: AddEthereumChainParameter['nativeCurrency'] = {
+  name: 'Mantle',
+  symbol: 'MNT',
+  decimals: 18,
+};
+
 interface BasicChainInformation {
   urls: string[];
   name: string;
