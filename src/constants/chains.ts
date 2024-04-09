@@ -160,7 +160,29 @@ export const CHAINS: {
     blockExplorerUrls: ['https://mumbai.polygonscan.com'],
   },
 };
-
+  // Mantle sepolia
+  [ChainId.MantleSepolia]: {
+    urls: [
+      infuraKey
+        ? `xxxxxxxxxx`
+        : undefined,
+      'https://rpc.sepolia.mantle.xyz/',
+    ].filter((url) => url !== undefined) as string[],
+    name: 'Polygon Mainnet',
+    nativeCurrency: MATIC,
+    blockExplorerUrls: ['https://polygonscan.com'],
+  },
+  80001: {
+    urls: [
+      infuraKey
+        ? `https://polygon-mumbai.infura.io/v3/${infuraKey}`
+        : undefined,
+    ].filter((url) => url !== undefined) as string[],
+    name: 'Polygon Mumbai',
+    nativeCurrency: MATIC,
+    blockExplorerUrls: ['https://mumbai.polygonscan.com'],
+  },
+};
 export const URLS: { [chainId: number]: string[] } = Object.keys(
   CHAINS
 ).reduce<{ [chainId: number]: string[] }>((accumulator, chainId) => {
