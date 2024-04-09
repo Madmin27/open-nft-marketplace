@@ -134,4 +134,21 @@ export const NETWORKS: { [key: number]: Network } = {
       symbol: 'ETH',
     }
   },
+    [ChainId.MantleSepolia]: {
+    chainId: ChainId.MantleSepolia,
+    symbol: 'MNT',
+    explorerUrl: 'https://explorer.sepolia.mantle.xyz/',
+    name: 'MantleSepolia',
+    slug: 'mantleSepolia',
+    coingeckoId: 'ethereum',
+    wrappedAddress: '',
+    nativeCurrencyUrl: ethIcon.src,
+    imageUrl: mantlesepolia.src,
+    providerRpcUrl: 'https://rpc.sepolia.mantle.xyz',
+    nativeCurrency: {
+      name: 'Ethereum',
+      decimals: 18,
+      symbol: 'MNT',
+    }
+  },
 };
