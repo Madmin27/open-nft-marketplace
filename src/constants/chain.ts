@@ -137,6 +137,17 @@ export const NETWORKS: { [key: number]: Network } = {
     [ChainId.MantleSepolia]: {
     chainId: ChainId.MantleSepolia,
     symbol: 'MNT',
+    explorerUrl: 'https://polygonscan.com',
+    name: 'MantleSepolia',
+    slug: 'mantleSepolia',
+    coingeckoId: 'matic-network',
+    wrappedAddress: `0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270`,
+    providerRpcUrl: `https://polygon-rpc.com/`,
+    imageUrl: polygonIcon.src,
+  },
+    [ChainId.MantleSepolia]: {
+    chainId: ChainId.MantleSepolia,
+    symbol: 'MNT',
     explorerUrl: 'https://explorer.sepolia.mantle.xyz/',
     name: 'MantleSepolia',
     slug: 'mantleSepolia',
